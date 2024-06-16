@@ -1,0 +1,85 @@
+.frameLevelContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 2rem;
+}
+
+.frameLevel {
+  --level-background-0: #f0e221;
+  --level-background-1: #ff00d4;
+  position: relative;
+  color: #fff;
+  border-radius: 99rem;
+  width: 10rem;
+  background-color: var(--frameMoney-background);
+  box-shadow: 0 0 0 0.15rem var(--frameMoney-border),
+    0 0 0.25rem 0.3rem #00000021;
+  overflow: hidden;
+}
+
+.frameLevel > div {
+  position: relative;
+  width: 5rem;
+  height: 2rem;
+  background-image: linear-gradient(
+    90deg,
+    var(--level-background-0),
+    #ff0224 50%,
+    var(--level-background-1)
+  );
+  background-size: 10rem 1.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  /* animation: fakeLevel 1s infinite linear; */
+}
+
+.frameLevel > div::after {
+  position: absolute;
+  content: "";
+  z-index: 999;
+  width: 10rem;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #00000000,
+    #ffffff33 50%,
+    #00000000
+  );
+}
+
+.frameLevel > span {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 0.25rem #000000;
+}
+
+.frameAvatar {
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 99rem;
+  overflow: hidden;
+  background-image: radial-gradient(
+    circle,
+    var(--background-1),
+    var(--background-0)
+  );
+  box-shadow: 0 0 0 0.15rem var(--frameMoney-border),
+    0 0 0.25rem 0.3rem #00000021;
+}
+
+@keyframes fakeLevel {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10rem;
+  }
+}

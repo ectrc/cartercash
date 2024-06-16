@@ -1,0 +1,56 @@
+.frame {
+  --background-0: #07001b;
+  --background-1: #0e003b;
+
+  --frameMenu-top: #b62eda;
+  --frameMenu-bottom: #330853;
+  --frameMenu-underlay-top: #24002d;
+  --frameMenu-underlay-bottom: #6c028b;
+  --frameMenu-border-top: #ffe600;
+  --frameMenu-border-bottom: #d27300;
+
+  --frameMoney-background: #210c31;
+  --frameMoney-border: #ae22ce;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-image: radial-gradient(
+    circle,
+    var(--background-1),
+    var(--background-0)
+  );
+}
+
+.frame > section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.frameMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  /* height: 4rem; */
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--frameMenu-top),
+    var(--frameMenu-bottom)
+  );
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      var(--frameMenu-border-top),
+      var(--frameMenu-border-bottom)
+    )
+    80;
+  border-bottom-width: 0.3rem;
+  border-top-width: 0rem;
+}

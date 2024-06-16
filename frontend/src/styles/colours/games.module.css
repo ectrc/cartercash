@@ -1,0 +1,25 @@
+.scanline {
+  --scanline: 1 !important;
+}
+
+.sunrise {
+  --sunrise: 1 !important;
+}
+
+.blue {
+  --primary: #0434ff;
+  --secondary: #010939;
+  --bg: radial-gradient(circle, var(--primary), var(--secondary));
+}
+
+.purple {
+  --primary: #a310cc;
+  --secondary: #1d0127;
+  --bg: radial-gradient(circle, var(--primary), var(--secondary));
+}
+
+.fire {
+  --primary: #ff7300;
+  --secondary: #500505;
+  --bg: radial-gradient(circle, var(--primary), var(--secondary));
+}

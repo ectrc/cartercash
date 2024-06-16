@@ -1,0 +1,57 @@
+.frameButtonOuter {
+  all: unset;
+  display: flex;
+  z-index: 0;
+  padding: 0.175rem;
+  border-radius: 99rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--button-border-top),
+    var(--button-border-bottom)
+  );
+}
+
+.frameButtonOuter div {
+  z-index: 1;
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  height: 31px;
+  max-height: 31px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 99rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--button-background-0),
+    var(--button-background-2) 100%
+  );
+}
+
+.frameButtonOuter div:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--button-background-0),
+    var(--button-background-1) 90%,
+    var(--button-background-2) 100%
+  );
+}
+
+.frameButtonOuter div span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 31px;
+}
+
+.frameButtonOuter.collect {
+  --button-background-0: var(--collectButton-background-0);
+  --button-background-1: var(--collectButton-background-1);
+  --button-background-2: var(--collectButton-background-2);
+  --button-border-top: var(--collectButton-border-top);
+  --button-border-bottom: var(--collectButton-border-bottom);
+}

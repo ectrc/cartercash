@@ -1,0 +1,114 @@
+.classicGameCard {
+  --scanline: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 15rem;
+  height: 27rem;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 1px #7a591d, 0 0 0 2px #c39a0b, 0 0 0 3px #d9cd4f,
+    0 0 0 4px #d9cd4f, 0 0 0 5px #c39a0b, 0 0 0 6px #6b452d;
+  transition: transform 100ms;
+}
+
+.classicGameCard:hover {
+  transform: translateY(-0.15rem);
+}
+
+.classicGameCard::after {
+  opacity: var(--scanline);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-size: 100% 2rem;
+  animation: scanline 7s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 2rem;
+  }
+}
+
+.megaDiamondGameCard {
+  --sunrise: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 15rem;
+  height: 27rem;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 1px #7a591d, 0 0 0 2px #c39a0b, 0 0 0 3px #d9cd4f,
+    0 0 0 4px #d9cd4f, 0 0 0 5px #c39a0b, 0 0 0 6px #6b452d;
+  transition: transform 100ms;
+}
+
+.megaDiamondGameCard:hover {
+  transform: translateY(-0.15rem);
+}
+
+.megaDiamondGameCard::after {
+  opacity: var(--sunrise);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 15deg,
+    rgba(0, 0, 0, 0.2) 15deg,
+    rgba(0, 0, 0, 0.2) 30deg
+  );
+  scale: 2.5;
+  mask-image: radial-gradient(circle, #000000a2 0%, #000 100%);
+  animation: sunrise 137s linear infinite;
+}
+
+@keyframes sunrise {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

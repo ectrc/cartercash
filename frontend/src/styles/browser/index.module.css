@@ -1,0 +1,25 @@
+.gameBrowser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.gameBrowser::-webkit-scrollbar {
+  display: none;
+}
+
+.gameDivider {
+  height: 100%;
+  min-width: 0.25rem;
+  border-radius: 0.125rem;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    #e95399,
+    transparent
+  );
+}

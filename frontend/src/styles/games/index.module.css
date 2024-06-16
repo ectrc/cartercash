@@ -1,0 +1,29 @@
+.gameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 45rem;
+  animation: popIn 200ms ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.goBackToBrowser {
+  all: unset;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}

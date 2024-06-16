@@ -1,0 +1,9 @@
+.frameMoney {
+  position: relative;
+  color: #fff;
+  padding: 0.45rem 1rem;
+  border-radius: 99rem;
+  background-color: var(--frameMoney-background);
+  box-shadow: 0 0 0 0.15rem var(--frameMoney-border),
+    0 0 0.25rem 0.3rem #00000021;
+}

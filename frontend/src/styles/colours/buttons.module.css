@@ -1,0 +1,15 @@
+.collect {
+  --button-background-0: #af564f;
+  --button-background-1: #9f0c93;
+  --button-background-2: #e700e8;
+  --button-border-top: #efbe28;
+  --button-border-bottom: #fc9d06;
+}
+
+.green {
+  --button-background-0: #1fb81f;
+  --button-background-1: #137507;
+  --button-background-2: #159615;
+  --button-border-top: #00ff00;
+  --button-border-bottom: #245824;
+}
